@@ -1,8 +1,10 @@
 # Binary-Classification-using-N-Gram-Model-on-Text-Data
 
-——————————————————————————————————————————————————————————————————
+This project is an implementation of a pre-rating system of the Amazon product review data which determines the helpfulness of a review given by a customer and whether it would be beneficial to show that on the product page or not. It is a binary classification problem which predicts the helpfulness score as 1 if a certain review is actually helpful and predicts 0 otherwise. This algorithm uses the N-Gram model to convert the review text into TF-IDF values and then presents a comparative analysis of four common classification algorithms that are implemented without the use of any existing machine learning libraries in Python.
+
+———————————————————————————
 ## Original Input Files:-
-——————————————————————————————————————————————————————————————————
+———————————————————————————
 
 	1. reviews_Clothing_Shoes_and_Jewelry.json.gz (This is the small dataset of 2.92 GB)
 	2. reviews_Electronics.json.gz (This is the large dataset of 5.47 GB)
@@ -13,9 +15,9 @@ There are other input files that can be downloaded from the following website, a
 
 There are certain .csv files as well in the above link but our code will only handle to files with .json.gz extension.
 
-————————————————————————————————————————————————————————————————————
+——————————————————————————
 ## Summary of the files
-————————————————————————————————————————————————————————————————————
+——————————————————————————
 
 ### Script Files :-
 ——————————————
@@ -28,16 +30,8 @@ There are certain .csv files as well in the above link but our code will only ha
 	6. SCP_05_KNN_Model.py
 
 
-### Project Documentation :-
-—————————————————————————
-
-	1. IDM_Final_Project_Report_Group8.pdf
-	2. IDM_Final_Project_Presentation_Group8.pptx
-	3. Readme.txt
-
-
 ### Python Libraries used in all the scripts:
-—————————————————————————————————————————
+—————————————————————————————————————————-----
 
 1. numpy
 2. os
@@ -54,9 +48,9 @@ There are certain .csv files as well in the above link but our code will only ha
 
 Please check if all the above libraries are present by importing them in python. If not, then install them before execution of any of the scripts.  
 
-—————————————————————————————————————————————————————————————
+———————————————————————————
 ## Script Execution Steps:
-—————————————————————————————————————————————————————————————
+———————————————————————————
 
 
 1. Extract all the files from the zip file and place all of them in a folder.
@@ -86,9 +80,9 @@ The first script that needs to be executed before any other script is "SCP_00_Pr
 2. Save the changes and execute the script either from Spyder or from Python Command-line. This script will generate two output pickle files. One with the prefix "reviews_" is having the input data converted from JSON to Dataframe. The second file with prefix "features_" contains the TF-IDF features generated from the reviewText column. 
 
 
-————————————————————————————————————
+————————————————————————————————————---
 ## SCP_01_Logistic_Regression_Model.py
-————————————————————————————————————
+————————————————————————————————————---
 
 After the pre-processing, apply logistic regression model using this script.
 
@@ -105,9 +99,9 @@ After the pre-processing, apply logistic regression model using this script.
 2. Save the changes and execute the script either from Spyder or from Python Command-line. The script will print the performance metrics of the model - Accuracy, Precision, Recall and F1-Score.
 
 
-————————————————————————————————————
+————————————————————————————————————----
 ## SCP_02_Gaussian_Naive_Bayes_Model.py
-————————————————————————————————————
+————————————————————————————————————----
 
 After the pre-processing, apply Gaussian Naive Bayes model using this script.
 
@@ -120,9 +114,9 @@ After the pre-processing, apply Gaussian Naive Bayes model using this script.
 
 2. Save the changes and execute the script either from Spyder or from Python Command-line. The script will print the performance metrics of the model - Accuracy, Precision, Recall and F1-Score.
 
-————————————————————————————————
+————————————————————————————————---
 ## SCP_03_DecisionTree_Model_V1.py
-————————————————————————————————
+————————————————————————————————---
 
 After the pre-processing, apply Decision Tree model using this script. This is one of the implementations of the Decision Tree where each level has the same set of feature counts considered for split points computation.
 
@@ -139,9 +133,9 @@ After the pre-processing, apply Decision Tree model using this script. This is o
 
 2. Save the changes and execute the script either from Spyder or from Python Command-line. The script will print the performance metrics of the model - Accuracy, Precision, Recall and F1-Score. It will also save the trained decision tree for re-executions of this script.
 
-————————————————————————————————
+————————————————————————————————---
 ## SCP_04_DecisionTree_Model_V2.py
-————————————————————————————————
+————————————————————————————————---
 
 After the pre-processing, apply Decision Tree model using this script. This is one of the implementations of the Decision Tree where each level has the one set of feature removed which was considered in each of the previous levels.
 
@@ -158,9 +152,9 @@ After the pre-processing, apply Decision Tree model using this script. This is o
 
 2. Save the changes and execute the script either from Spyder or from Python Command-line. The script will print the performance metrics of the model - Accuracy, Precision, Recall and F1-Score. It will also save the trained decision tree for re-executions of this script.
 
-————————————————————
+————————————————————---
 ## SCP_05_KNN_Model.py
-————————————————————
+————————————————————---
 
 After the pre-processing, apply K-Nearest Neighbours model using this script.
 
