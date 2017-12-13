@@ -61,7 +61,6 @@ Please check if all the above libraries are present by importing them in python.
 
 
 The details of each script execution is given below :
-—————————————————————————————————————————————————————
 
 ———————————————————————————————————
 ## SCP_00_Pre_Processing_Reviews.py
